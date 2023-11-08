@@ -1,0 +1,102 @@
+* {margin: 0;}
+
+
+body {
+  font-family: "Times New Roman", sans-serif;
+  background-color: var(--color0);
+  color: var(--color10);
+  min-width: 500px; /* or whatever minimum width you desire */
+  overflow-x: auto; /* to allow horizontal scrolling if needed */
+}
+
+header {
+  background-color: var(--color2);
+}
+
+h1 {
+  text-align: center;
+  margin: 0;
+  padding: 30px;
+}
+
+h2 {
+  text-align: center;
+  padding: 10px;
+  color: var(--color9);
+}
+
+h3 {
+  text-align: center;
+  padding-bottom: 10px;
+  color: var(--color8);
+}
+
+nav {
+  background-color: var(--color1);
+  color: var(--color8);
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+  
+nav li {
+  display: inline-block;
+  margin-inline: 10px;
+}
+  
+nav a {
+  color: var(--color9);
+  text-decoration: none;
+}
+
+p {
+  color: var(--color10);
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+#logo {
+  position: absolute; /* Fixed position */
+  top: 10px;  /* Align to the top */
+  left: 20px;  /* Align to the right */
+}
+
+.brief {
+  text-align: center;
+  max-width: 800px;
+  font-size: larger;
+}
+
+.para-title {
+  text-align: left;
+  padding: 0;
+  color: var(--color10);
+}
+
+.article-body {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.background-color1 {
+  background-color: var(--color1);
+}
+
+.background-color2 {
+  background-color: var(--color2);
+}
+
+.centered-box {
+  display: flex;
+  justify-content: center; /* This will center its children horizontally */
+  margin: 20px 40px 30px 35px;
+}

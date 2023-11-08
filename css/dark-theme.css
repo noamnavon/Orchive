@@ -1,0 +1,14 @@
+:root[data-theme="dark"] {
+  /* Dark theme variables */
+  --color0:  #000000;
+  --color1:  #0A0A0D;
+  --color2:  #121214;
+  --color3:  #1F1F21;
+  --color4:  #2F2F31;
+  --color5:  #454547;
+  --color6:  #626264;
+  --color7:  #878789;
+  --color8:  #B7B7B9;
+  --color9:  #D7D7D9;
+  --color10:  #F5F5F7;
+}

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+
+  <head id="head">
+    <title>Traits</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/dark-theme.css">
+    <link rel="stylesheet" href="./css/light-theme.css">
+
+
+    <style>
+        .column {
+          padding: 10px; /* Adds some space inside the columns */
+          display: flex;
+          flex-direction: column; /* Stack flex items vertically */
+          align-items: center;
+        }
+
+        .trait {
+            margin: 0px 10px 10px 10px;
+            max-width: 800px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+      
+        .trait-box {
+            display: flex;
+            justify-content: center;
+        }
+
+        #gray1-col {
+            background-color: var(--color1);
+        }
+
+        #gray2-col {
+            background-color: var(--color2);
+        }
+      
+        /* When the window is at least 900px wide, the columns become side by side */
+        @media (min-width: 1200px) {
+            .row {
+                display: flex;
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+            .column {
+                flex: 1; /* Each column takes up equal space */
+                margin: 5px;
+                border-radius: 15px;
+            }
+            .trait {
+                margin: 0px 10px 10px 10px;
+                max-width: fit-content;
+                text-align: left;
+            }
+
+            #gray2-col {
+                background-color: var(--color1);
+            }
+        }
+
+      </style>
+
+  </head>
+
+  <body>
+    <header>
+      <a href="./home.html">
+        <img id="logo" height="71" width="71">
+      </a>
+      <h1>Traits</h1>
+    </header>
+    <div class="background-color1">
+      <h2>Musical Traits Classification</h2>
+    </div>
+
+
+    <div class="centered-box">
+        <p class="brief">
+            Have you ever been engulfed in a melody, yet find yourself at a loss to define its genre? Do you search for a certain musical ambiance, only to find the style too broad or inconsistent? The issue lies in the nature of genres: they're more of a chronological chart of artistic influences than a precise reflection of the music's inherent qualities.
+            <br><br>
+            Enter the Musical Traits Classification (MTC). This system transcends traditional boundaries by focusing on the core attributes of music. It's a tool that distills the essence of a piece into a five-letter code, allowing for more nuanced recommendations and a deeper understanding of musical identities.
+            <br><br>
+            With MTC, embark on a journey of musical discovery, where vibes are mapped, and every note's purpose is crystal clear.
+        </p>
+    </div>
+
+
+    <div class="row">
+        <div class="column" id="gray1-col">
+            <h2>Energy</h2>
+            <h3>Vigorous - Lethargic</h3>
+            <div class="trait-box"> 
+                <p class="trait">
+                    This trait is about the energy of the music.<br><br>
+                    High energy results in higher heart beat rate, and excitement<br>
+                    Vigorous music is:
+                    <br> ~ Fast
+                    <br> ~ Loud
+                    <br> ~ Dense
+
+                    <br><br>
+
+                    Low energy tend to have more chill and breathy vibes.<br>
+                    Lethargic music is:
+                    <br> ~ Slow
+                    <br> ~ Quiet
+                    <br> ~ Sparse
+                </p>
+            </div> 
+        </div>
+        <div class="column" id="gray2-col">
+            <h2>Complication</h2>
+            <h3>Intricate - Minimalist</h3>
+            <div class="trait-box"> 
+                <p class="trait">
+                    This trait is about the complication of the music.<br><br>
+                    Intricate music is changing, deep and decorated, often requires several listenings to fully comprehend it.<br>
+                    Intricate music is:
+                    <br> ~ Detailed
+                    <br> ~ Turbulent
+                    <br> ~ Dimensional
+
+                    <br><br>
+
+                    Minimalist music is simple, memorable, steady, and often catchy, creating hooks and earworms.<br>
+                    Minimalist music is:
+                    <br> ~ Neat
+                    <br> ~ Stable
+                    <br> ~ Flat
+                </p>
+            </div> 
+        </div>
+        <div class="column" id="gray1-col">
+            <h2>Tone</h2>
+            <h3>Bright - Dark</h3>
+            <div class="trait-box"> 
+                <p class="trait">
+                    This trait is about the tone of the music.<br><br>
+
+                    Bright tone describes good, joy, hope, peace and positive emotions.<br>
+                    Bright music has:
+                    <br> ~ Consonants
+                    <br> ~ Soothe
+                    <br> ~ Levity
+
+                    <br><br>
+
+                    Dark tone describes evil, sorrow, despair, struggle and negative emotions.<br>
+                    Minimalist music is:
+                    <br> ~ Dissonants
+                    <br> ~ Grit
+                    <br> ~ Gravity
+                </p>
+            </div> 
+        </div>
+        <div class="column" id="gray2-col">
+            <h2>Heritage</h2>
+            <h3>Traditional - Progressive</h3>
+            <div class="trait-box"> 
+                <p class="trait">
+                    This trait is about the heritage of the music.<br><br>
+
+                    If the genre is easily identified, the progression is familiar, or you can predict the music, it is Traditional.<br>
+                    Traditional music is:
+                    <br> ~ Generic
+                    <br> ~ Conformist
+                    <br> ~ Anchored
+
+                    <br><br>
+
+                    If you can't put your finger on it, and the music evolves in direction you wouldn't expect, it is Progressive.<br>
+                    Progressive music is:
+                    <br> ~ Eclectic
+                    <br> ~ Rebel
+                    <br> ~ Wondering
+                </p>
+            </div> 
+        </div>
+        <div class="column" id="gray1-col">
+            <h2>Spirit</h2>
+            <h3>Soulful - Analytical</h3>
+            <div class="trait-box"> 
+                <p class="trait">
+                    This trait is about the spirit of the music.<br><br>
+
+                    Soulful music is subjective, spout from the heart and touch deeply.<br>
+                    The bold features are:
+                    <br> ~ Expression
+                    <br> ~ Emotion
+                    <br> ~ Intent
+
+                    <br><br>
+
+                    Analytical music is objective, structured by the mind and stimulate the brain.<br>
+                    The bold features are:
+                    <br> ~ Technique
+                    <br> ~ Intellect
+                    <br> ~ Abstraction
+                </p>
+            </div> 
+        </div>
+    </div>
+
+    <script src="./js/theme-toggle.js"></script>
+  </body>
+
+</html>

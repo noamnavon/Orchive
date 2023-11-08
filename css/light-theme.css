@@ -1,0 +1,14 @@
+:root[data-theme="light"] {
+    /* Light theme variables */
+    --color0:  #ffffff;
+    --color1:  #f6f6f8;
+    --color2:  #ededef;
+    --color3:  #e0e0e2;
+    --color4:  #d0d0d2;
+    --color5:  #bababc;
+    --color6:  #9D9D9F;
+    --color7:  #78787A;
+    --color8:  #48484A;
+    --color9:  #272729;
+    --color10:  #0a0a0c;
+}

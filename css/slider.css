@@ -1,0 +1,51 @@
+.parameters-container {
+    margin-top: 7px;
+    margin-bottom: 30px;
+}
+
+.center-container {
+    display: flex;
+    justify-content: center; /* centers horizontally */
+    align-items: center; /* centers vertically */
+}
+
+.slider-container {
+    width: 250px;
+    height: 15px;
+    background: var(--color4); /* Light gray background */
+    border-radius: 10px;
+    position: relative; /* This will allow us to position the thumb and track inside */
+    margin: 7px; /* Some spacing */
+}
+
+.slider-thumb {
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    background: var(--color3);
+    border: 2px solid var(--color6); /* Blue border */
+    border-radius: 50%; /* Makes it circular */
+    top: 50%;
+    transform: translateY(-50%) translateX(-50%); /* Centers it vertically and slightly shifts it back to align with the track's end */
+}
+
+.label-start, .label-end {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--color9);
+}
+
+.label-start {
+    left: 0;
+    transform: translateY(-50%) translateX(-100%); /* Align it to the left of the container */
+    padding-right: 10px; /* Some space from the container edge */
+}
+
+.label-end {
+    right: 0;
+    transform: translateY(-50%) translateX(100%); /* Align it to the right of the container */
+    padding-left: 10px; /* Some space from the container edge */
+}

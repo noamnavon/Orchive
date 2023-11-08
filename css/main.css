@@ -18,24 +18,28 @@ header {
 }
 
 h1 {
+  font-size: 2rem;
   text-align: center;
   margin: 0;
   padding: 30px;
 }
 
 h2 {
+  font-size: 1.5rem;
   text-align: center;
   padding: 10px;
   color: var(--color9);
 }
 
 h3 {
+  font-size: 1.2rem;
   text-align: center;
   padding-bottom: 10px;
   color: var(--color8);
 }
 
 nav {
+  font-size: 1.2rem;
   background-color: var(--color1);
   color: var(--color8);
   padding: 20px;
@@ -60,6 +64,7 @@ nav a {
 }
 
 p {
+  font-size: 1rem;
   color: var(--color10);
   margin-bottom: 1rem;
   width: 100%;
@@ -80,6 +85,7 @@ p {
 .para-title {
   text-align: left;
   padding: 0;
+  margin-bottom: 0.2em;
   color: var(--color10);
 }
 

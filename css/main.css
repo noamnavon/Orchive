@@ -3,6 +3,7 @@
 
 body {
   font-family: "Times New Roman", sans-serif;
+  font-size: 12pt;
   background-color: var(--color0);
   color: var(--color10);
   min-width: 500px; /* or whatever minimum width you desire */

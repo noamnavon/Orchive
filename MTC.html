@@ -9,59 +9,55 @@
 
 
     <style>
-        .column {
-          padding: 10px; /* Adds some space inside the columns */
-          display: flex;
-          flex-direction: column; /* Stack flex items vertically */
-          align-items: center;
-        }
+      .column {
+        padding: 10px; /* Adds some space inside the columns */
+        display: flex;
+        flex-direction: column; /* Stack flex items vertically */
+        align-items: center;
+      }
 
-        .trait {
-            margin: 0px 10px 10px 10px;
-            max-width: 800px;
-            display: flex;
-            justify-content: center;
-            text-align: center;
-            font-size: 17px;
-        }
+      .trait {
+        margin: 0px 30px 10px 30px;
+        text-align: center;
+      }
       
-        .trait-box {
-            display: flex;
-            justify-content: center;
-        }
+      .trait-box {
+        display: flex;
+        justify-content: center;
+      }
 
-        .gray1-col {
-            background-color: var(--color1);
+      .gray1-col {
+        background-color: var(--color1);
+      }
+
+      .gray2-col {
+        background-color: var(--color2);
+      }
+      
+        /* When the window is at least 900px wide, the columns become side by side */
+      @media (min-width: 1200px) {
+        .row {
+          display: flex;
+          margin-left: 20px;
+          margin-right: 20px;
+        }
+        .column {
+          flex: 1; /* Each column takes up equal space */
+          margin: 5px;
+          border-radius: 15px;
+        }
+        .trait {
+          margin: 0px 10px 10px 10px;
+          max-width: fit-content;
+          text-align: left;
         }
 
         .gray2-col {
-            background-color: var(--color2);
+          background-color: var(--color1);
         }
-      
-        /* When the window is at least 900px wide, the columns become side by side */
-        @media (min-width: 1200px) {
-            .row {
-                display: flex;
-                margin-left: 20px;
-                margin-right: 20px;
-            }
-            .column {
-                flex: 1; /* Each column takes up equal space */
-                margin: 5px;
-                border-radius: 15px;
-            }
-            .trait {
-                margin: 0px 10px 10px 10px;
-                max-width: fit-content;
-                text-align: left;
-            }
+      }
 
-            .gray2-col {
-                background-color: var(--color1);
-            }
-        }
-
-      </style>
+    </style>
 
   </head>
 
@@ -78,39 +74,39 @@
 
 
     <div class="centered-box">
-        <p class="brief">
-            Have you ever been engulfed in a melody, yet find yourself at a loss to define its genre? Do you search for a certain musical ambiance, only to find the style too broad or inconsistent? The issue lies in the nature of genres: they're more of a chronological chart of artistic influences than a precise reflection of the music's inherent qualities.
-            <br><br>
-            Enter the Musical Traits Classification (MTC). This system transcends traditional boundaries by focusing on the core attributes of music. It's a tool that distills the essence of a piece into a five-letter code, allowing for more nuanced recommendations and a deeper understanding of musical identities.
-            <br><br>
-            With MTC, embark on a journey of musical discovery, where vibes are mapped, and every note's purpose is crystal clear.
-        </p>
+      <p class="brief">
+        Have you ever been engulfed in a melody, yet find yourself at a loss to define its genre? Do you search for a certain musical ambiance, only to find the style too broad or inconsistent? The issue lies in the nature of genres: they're more of a chronological chart of artistic influences than a precise reflection of the music's inherent qualities.
+        <br><br>
+        Enter the Musical Traits Classification (MTC). This system transcends traditional boundaries by focusing on the core attributes of music. It's a tool that distills the essence of a piece into a five-letter code, allowing for more nuanced recommendations and a deeper understanding of musical identities.
+        <br><br>
+        With MTC, embark on a journey of musical discovery, where vibes are mapped, and every note's purpose is crystal clear.
+      </p>
     </div>
 
 
     <div class="row">
-        <div class="column gray1-col">
-            <h2>Energy</h2>
-            <h3>Vigorous - Lethargic</h3>
-            <div class="trait-box"> 
-                <p class="trait">
-                    This trait is about the energy of the music.<br><br>
-                    High energy results in higher heart beat rate, and excitement<br>
-                    Vigorous music is:
-                    <br> ~ Fast
-                    <br> ~ Loud
-                    <br> ~ Dense
+      <div class="column gray1-col">
+        <h2>Energy</h2>
+        <h3>Vigorous - Lethargic</h3>
+        <div class="trait-box"> 
+          <p class="trait">
+            This trait is about the energy of the music.<br><br>
+            High energy results in higher heart beat rate, and excitement<br>
+            Vigorous music is:
+            <br> ~ Fast
+            <br> ~ Loud
+            <br> ~ Dense
 
-                    <br><br>
+            <br><br>
 
-                    Low energy tend to have more chill and breathy vibes.<br>
-                    Lethargic music is:
-                    <br> ~ Slow
-                    <br> ~ Quiet
-                    <br> ~ Sparse
-                </p>
-            </div> 
-        </div>
+            Low energy tend to have more chill and breathy vibes.<br>
+            Lethargic music is:
+            <br> ~ Slow
+            <br> ~ Quiet
+            <br> ~ Sparse
+          </p>
+        </div> 
+      </div>
         <div class="column gray2-col">
             <h2>Complication</h2>
             <h3>Intricate - Minimalist</h3>

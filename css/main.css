@@ -1,8 +1,11 @@
 * {margin: 0;}
 
 html {
+  -webkit-text-size-adjust: 100%; /* For Safari on iOS */
+  text-size-adjust: 100%; /* For other browsers */
   font-size: 18px;
 }
+
 
 body {
   font-family: "Times New Roman", sans-serif;

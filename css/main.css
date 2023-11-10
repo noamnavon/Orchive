@@ -1,5 +1,9 @@
 * {margin: 0;}
 
+html {
+  font-size: 18px;
+}
+
 body {
   font-family: "Times New Roman", sans-serif;
   font-size: medium;
@@ -68,7 +72,7 @@ p {
 
 #logo {
   position: absolute; /* Fixed position */
-  top: 10px;  /* Align to the top */
+  top: 14px;  /* Align to the top */
   left: 20px;  /* Align to the right */
 }
 

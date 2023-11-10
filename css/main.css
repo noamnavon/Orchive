@@ -1,8 +1,6 @@
 * {margin: 0;}
 
 html {
-  -webkit-text-size-adjust: none; /* For Safari on iOS */
-  text-size-adjust: none; /* For other browsers */
   font-size: 18px;
 }
 

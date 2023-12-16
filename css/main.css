@@ -1,4 +1,7 @@
-* {margin: 0;}
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
 
 html {
   font-size: 18px;
@@ -10,8 +13,7 @@ body {
   font-size: medium;
   background-color: var(--color0);
   color: var(--color10);
-  min-width: 420px; /* or whatever minimum width you desire */
-  overflow-x: auto; /* to allow horizontal scrolling if needed */
+/*  min-width: 390px; or whatever minimum width you desire */
 }
 
 img, video, .container {
@@ -76,11 +78,11 @@ p {
   width: 100%;
 }
 
-#logo {
-  position: absolute; /* Fixed position */
-  top: 14px;  /* Align to the top */
-  left: 20px;  /* Align to the right */
-}
+/* #logo {
+  position: absolute;
+  top: 14px;
+  left: 20px;
+} */
 
 .brief {
   text-align: center;

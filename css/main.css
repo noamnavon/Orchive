@@ -98,6 +98,51 @@ p {
   box-sizing: border-box;
 }
 
+.lyrics-box {
+  background-color: var(--colort);
+  padding: 9px 12px 9px 10px;
+  border-radius: 12px;
+  margin-bottom: 7px;
+
+  -webkit-column-count: 2;  /* Chrome, Safari, Opera */
+  -moz-column-count: 2;     /* Firefox */
+  column-count: 2;          /* Standard syntax */
+  
+  -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+  -moz-column-gap: 40px;    /* Firefox */
+  column-gap: 40px;         /* Standard syntax */
+  
+  /* Optional, to ensure content is distributed evenly across columns */
+  -webkit-column-fill: balance;
+  -moz-column-fill: balance;
+  column-fill: balance;
+
+  -webkit-column-rule: 1px solid #ccc; /* Chrome, Safari, Opera */
+  -moz-column-rule: 1px solid #ccc;    /* Firefox */
+  column-rule: 1px solid #ccc;         /* Standard syntax */
+}
+
+@media screen and (max-width: 500px) {
+  .lyrics-box {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .lyrics-box {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+  }
+}
+
+.lyrics {
+  font-style: italic;
+  margin-bottom: 0px;
+}
+
 .background-color1 {
   background-color: var(--color1);
 }

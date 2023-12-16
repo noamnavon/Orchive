@@ -10,7 +10,7 @@ body {
   font-size: medium;
   background-color: var(--color0);
   color: var(--color10);
-  min-width: 500px; /* or whatever minimum width you desire */
+  min-width: 420px; /* or whatever minimum width you desire */
   overflow-x: auto; /* to allow horizontal scrolling if needed */
 }
 

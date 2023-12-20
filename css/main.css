@@ -77,12 +77,17 @@ p {
   color: var(--color10);
   margin-bottom: 1rem;
   width: 100%;
+  white-space: pre-line;
 }
 
 #logo {
   position: absolute;
   top: 14px;
   left: 10px;
+}
+
+#further {
+  background-color: var(--color3);
 }
 
 .brief {
@@ -106,12 +111,30 @@ p {
   box-sizing: border-box;
 }
 
-.lyrics-box {
+.songButton {
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+  background-color: transparent;
+  
+  font-family: "Times New Roman", sans-serif;
+  font-size: large;
+  font-weight: bold;
+  color: var(--color10);
+}
+
+.caret {
+  font-size: small;
+}
+
+.song {
   background-color: var(--colort);
   padding: 9px 12px 9px 10px;
   border-radius: 12px;
   margin-bottom: 7px;
+}
 
+.lyrics {
   -webkit-column-count: 2;  /* Chrome, Safari, Opera */
   -moz-column-count: 2;     /* Firefox */
   column-count: 2;          /* Standard syntax */
@@ -131,7 +154,7 @@ p {
 }
 
 @media screen and (max-width: 500px) {
-  .lyrics-box {
+  .lyrics {
     -webkit-column-count: 1;
     -moz-column-count: 1;
     column-count: 1;
@@ -139,7 +162,7 @@ p {
 }
 
 @media screen and (min-width: 750px) {
-  .lyrics-box {
+  .lyrics {
     -webkit-column-count: 3;
     -moz-column-count: 3;
     column-count: 3;
@@ -149,6 +172,7 @@ p {
 .lyrics {
   font-style: italic;
   margin-bottom: 0px;
+  margin-top: 7px;
 }
 
 .background-color1 {
@@ -164,3 +188,9 @@ p {
   justify-content: center; /* This will center its children horizontally */
   margin: 20px 40px 30px 35px;
 }
+
+.site {
+  color: var(--color10);
+  text-decoration: none;
+}
+
